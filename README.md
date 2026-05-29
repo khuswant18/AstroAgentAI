@@ -25,9 +25,9 @@ graph TD
         EBD -->|missing| END_ASK["END (ask)"]
         EBD -->|present / skip| AGT[agent]
         AGT --> RTR{Router}
-        RTR -->|tools needed (<6)| TOOLS[ToolNode]
+        RTR -->|"tools needed (<6)"| TOOLS[ToolNode]
         TOOLS --> AGT
-        RTR -->|done / >=6 calls| SC[safety_check]
+        RTR -->|"done / >=6 calls"| SC[safety_check]
         SC --> FR[format_response]
         FR --> END_FINAL((END))
     end
