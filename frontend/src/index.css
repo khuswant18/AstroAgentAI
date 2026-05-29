@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base Styles ─────────────────────────────────────────────────────────── */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0b0a14;
+  color: #e8e3d8;
+  font-family: 'Newsreader', Georgia, serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Base custom classes to match theme */
+.bg-ara-bg {
+  background: 
+    url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%222000%22%20height%3D%222000%22%3E%3Ccircle%20cx%3D%22370%22%20cy%3D%22675%22%20r%3D%221.365440866952877%22%20fill%3D%22white%22%20opacity%3D%220.10688647008139556%22%20/%3E%3Ccircle%20cx%3D%221376%22%20cy%3D%22699%22%20r%3D%221.7850239564883901%22%20fill%3D%22white%22%20opacity%3D%220.3015403212896504%22%20/%3E%3Ccircle%20cx%3D%221160%22%20cy%3D%22513%22%20r%3D%221.1718042533036814%22%20fill%3D%22white%22%20opacity%3D%220.37031122114757656%22%20/%3E%3Ccircle%20cx%3D%22867%22%20cy%3D%221226%22%20r%3D%220.8193859039641212%22%20fill%3D%22white%22%20opacity%3D%220.21989445103444453%22%20/%3E%3Ccircle%20cx%3D%22941%22%20cy%3D%221297%22%20r%3D%221.4936306354890255%22%20fill%3D%22white%22%20opacity%3D%220.264639908182283%22%20/%3E%3Ccircle%20cx%3D%221665%22%20cy%3D%221256%22%20r%3D%221.2721865910793617%22%20fill%3D%22white%22%20opacity%3D%220.3540209930777933%22%20/%3E%3Ccircle%20cx%3D%2257%22%20cy%3D%221298%22%20r%3D%221.8488258385750244%22%20fill%3D%22white%22%20opacity%3D%220.21443749725459344%22%20/%3E%3Ccircle%20cx%3D%22971%22%20cy%3D%221087%22%20r%3D%220.9168434771342621%22%20fill%3D%22white%22%20opacity%3D%220.2862828555986877%22%20/%3E%3Ccircle%20cx%3D%2258%22%20cy%3D%22839%22%20r%3D%220.6698124976452146%22%20fill%3D%22white%22%20opacity%3D%220.446864149020904%22%20/%3E%3Ccircle%20cx%3D%2298%22%20cy%3D%22106%22%20r%3D%220.9416410323382765%22%20fill%3D%22white%22%20opacity%3D%220.24523730030739985%22%20/%3E%3Ccircle%20cx%3D%221689%22%20cy%3D%22368%22%20r%3D%221.6859349896791206%22%20fill%3D%22white%22%20opacity%3D%220.15858000492415174%22%20/%3E%3Ccircle%20cx%3D%22627%22%20cy%3D%22831%22%20r%3D%220.941219213560731%22%20fill%3D%22white%22%20opacity%3D%220.26470390141696236%22%20/%3E%3Ccircle%20cx%3D%221375%22%20cy%3D%22880%22%20r%3D%221.3653198038766115%22%20fill%3D%22white%22%20opacity%3D%220.38318859942730164%22%20/%3E%3Ccircle%20cx%3D%22461%22%20cy%3D%221975%22%20r%3D%220.686561141755106%22%20fill%3D%22white%22%20opacity%3D%220.10123533261680199%22%20/%3E%3Ccircle%20cx%3D%22262%22%20cy%3D%22987%22%20r%3D%221.5714396324208033%22%20fill%3D%22white%22%20opacity%3D%220.1118173516584288%22%20/%3E%3Ccircle%20cx%3D%221183%22%20cy%3D%22956%22%20r%3D%221.8491560934149638%22%20fill%3D%22white%22%20opacity%3D%220.40043990866743184%22%20/%3E%3Ccircle%20cx%3D%221334%22%20cy%3D%22352%22%20r%3D%221.6007878495488777%22%20fill%3D%22white%22%20opacity%3D%220.43666095576446207%22%20/%3E%3Ccircle%20cx%3D%22302%22%20cy%3D%221512%22%20r%3D%220.6933988938034052%22%20fill%3D%22white%22%20opacity%3D%220.2677147524325957%22%20/%3E%3Ccircle%20cx%3D%22477%22%20cy%3D%221089%22%20r%3D%221.436659560106533%22%20fill%3D%22white%22%20opacity%3D%220.227849818145202%22%20/%3E%3Ccircle%20cx%3D%221988%22%20cy%3D%221980%22%20r%3D%221.5272934715047823%22%20fill%3D%22white%22%20opacity%3D%220.4115441303129278%22%20/%3E%3Ccircle%20cx%3D%22906%22%20cy%3D%22793%22%20r%3D%220.6806870074543647%22%20fill%3D%22white%22%20opacity%3D%220.4752493570549785%22%20/%3E%3Ccircle%20cx%3D%221166%22%20cy%3D%22243%22%20r%3D%220.5760056704286542%22%20fill%3D%22white%22%20opacity%3D%220.14174065417927856%22%20/%3E%3Ccircle%20cx%3D%221059%22%20cy%3D%22490%22%20r%3D%220.5526265677934991%22%20fill%3D%22white%22%20opacity%3D%220.10917707415132308%22%20/%3E%3Ccircle%20cx%3D%221117%22%20cy%3D%22898%22%20r%3D%220.7328890656821678%22%20fill%3D%22white%22%20opacity%3D%220.17010540254521367%22%20/%3E%3Ccircle%20cx%3D%22813%22%20cy%3D%221905%22%20r%3D%221.312092144657688%22%20fill%3D%22white%22%20opacity%3D%220.47051222897235234%22%20/%3E%3Ccircle%20cx%3D%221444%22%20cy%3D%221915%22%20r%3D%221.8200028343599919%22%20fill%3D%22white%22%20opacity%3D%220.49426334066813415%22%20/%3E%3Ccircle%20cx%3D%221133%22%20cy%3D%22495%22%20r%3D%220.5871104944513728%22%20fill%3D%22white%22%20opacity%3D%220.26071434908193614%22%20/%3E%3Ccircle%20cx%3D%22400%22%20cy%3D%22715%22%20r%3D%221.1614422535505953%22%20fill%3D%22white%22%20opacity%3D%220.29315030549256976%22%20/%3E%3Ccircle%20cx%3D%221395%22%20cy%3D%22736%22%20r%3D%221.3505842419048457%22%20fill%3D%22white%22%20opacity%3D%220.3455282528861916%22%20/%3E%3Ccircle%20cx%3D%221173%22%20cy%3D%22277%22%20r%3D%220.5123884320455474%22%20fill%3D%22white%22%20opacity%3D%220.17119719733767563%22%20/%3E%3Ccircle%20cx%3D%221644%22%20cy%3D%221516%22%20r%3D%221.233119041797275%22%20fill%3D%22white%22%20opacity%3D%220.37344163616639947%22%20/%3E%3Ccircle%20cx%3D%221119%22%20cy%3D%22737%22%20r%3D%220.7134374552607003%22%20fill%3D%22white%22%20opacity%3D%220.33270325102610565%22%20/%3E%3Ccircle%20cx%3D%22909%22%20cy%3D%22778%22%20r%3D%220.9858416107838326%22%20fill%3D%22white%22%20opacity%3D%220.37732198271614237%22%20/%3E%3Ccircle%20cx%3D%221900%22%20cy%3D%221969%22%20r%3D%221.1441612044043934%22%20fill%3D%22white%22%20opacity%3D%220.1744043078147508%22%20/%3E%3Ccircle%20cx%3D%221974%22%20cy%3D%221477%22%20r%3D%221.977108216893426%22%20fill%3D%22white%22%20opacity%3D%220.30758209210834997%22%20/%3E%3Ccircle%20cx%3D%221307%22%20cy%3D%221830%22%20r%3D%221.283906809805543%22%20fill%3D%22white%22%20opacity%3D%220.44404983095083106%22%20/%3E%3Ccircle%20cx%3D%221742%22%20cy%3D%221360%22%20r%3D%221.5111859852646274%22%20fill%3D%22white%22%20opacity%3D%220.32218795396003297%22%20/%3E%3Ccircle%20cx%3D%22531%22%20cy%3D%22411%22%20r%3D%220.6712768627252313%22%20fill%3D%22white%22%20opacity%3D%220.35577433378357737%22%20/%3E%3Ccircle%20cx%3D%22857%22%20cy%3D%22896%22%20r%3D%220.6417527189100793%22%20fill%3D%22white%22%20opacity%3D%220.1980577236576525%22%20/%3E%3Ccircle%20cx%3D%22764%22%20cy%3D%221891%22%20r%3D%221.2205008536602044%22%20fill%3D%22white%22%20opacity%3D%220.4399858852410571%22%20/%3E%3Ccircle%20cx%3D%22551%22%20cy%3D%221634%22%20r%3D%221.3778148687812597%22%20fill%3D%22white%22%20opacity%3D%220.1410109935011173%22%20/%3E%3Ccircle%20cx%3D%22177%22%20cy%3D%22746%22%20r%3D%221.1301581449996592%22%20fill%3D%22white%22%20opacity%3D%220.4302885739189536%22%20/%3E%3Ccircle%20cx%3D%22269%22%20cy%3D%22112%22%20r%3D%220.5210230672703692%22%20fill%3D%22white%22%20opacity%3D%220.38856248061204635%22%20/%3E%3Ccircle%20cx%3D%221973%22%20cy%3D%22802%22%20r%3D%221.3841126045061827%22%20fill%3D%22white%22%20opacity%3D%220.31602544801312205%22%20/%3E%3Ccircle%20cx%3D%221820%22%20cy%3D%22532%22%20r%3D%221.8130363185672451%22%20fill%3D%22white%22%20opacity%3D%220.18290378640715158%22%20/%3E%3Ccircle%20cx%3D%22817%22%20cy%3D%22687%22%20r%3D%221.8340558964461438%22%20fill%3D%22white%22%20opacity%3D%220.10197898236992793%22%20/%3E%3Ccircle%20cx%3D%221350%22%20cy%3D%22360%22%20r%3D%220.7499604894600769%22%20fill%3D%22white%22%20opacity%3D%220.2218689337533677%22%20/%3E%3Ccircle%20cx%3D%221728%22%20cy%3D%221794%22%20r%3D%221.4199364311561324%22%20fill%3D%22white%22%20opacity%3D%220.3089065531839823%22%20/%3E%3Ccircle%20cx%3D%22270%22%20cy%3D%22376%22%20r%3D%221.181916245097501%22%20fill%3D%22white%22%20opacity%3D%220.36903809484503614%22%20/%3E%3Ccircle%20cx%3D%22380%22%20cy%3D%221935%22%20r%3D%220.9484327953808958%22%20fill%3D%22white%22%20opacity%3D%220.34268709864174063%22%20/%3E%3Ccircle%20cx%3D%22269%22%20cy%3D%22845%22%20r%3D%221.6318554762693767%22%20fill%3D%22white%22%20opacity%3D%220.11330478367287222%22%20/%3E%3Ccircle%20cx%3D%22360%22%20cy%3D%22220%22%20r%3D%221.9074619480393453%22%20fill%3D%22white%22%20opacity%3D%220.466993329724149%22%20/%3E%3Ccircle%20cx%3D%22372%22%20cy%3D%2243%22%20r%3D%221.497111566006915%22%20fill%3D%22white%22%20opacity%3D%220.4747765260070137%22%20/%3E%3Ccircle%20cx%3D%221852%22%20cy%3D%221461%22%20r%3D%220.6768853788452254%22%20fill%3D%22white%22%20opacity%3D%220.101513900789283%22%20/%3E%3Ccircle%20cx%3D%221332%22%20cy%3D%22750%22%20r%3D%221.266410909831261%22%20fill%3D%22white%22%20opacity%3D%220.17708265789710428%22%20/%3E%3Ccircle%20cx%3D%221842%22%20cy%3D%221142%22%20r%3D%221.6261354870221367%22%20fill%3D%22white%22%20opacity%3D%220.1836037471268584%22%20/%3E%3Ccircle%20cx%3D%22478%22%20cy%3D%221368%22%20r%3D%221.7025911134528826%22%20fill%3D%22white%22%20opacity%3D%220.4067761284334218%22%20/%3E%3Ccircle%20cx%3D%22107%22%20cy%3D%22170%22%20r%3D%221.516975454789056%22%20fill%3D%22white%22%20opacity%3D%220.15573854821253597%22%20/%3E%3Ccircle%20cx%3D%221505%22%20cy%3D%22294%22%20r%3D%221.4062756393105293%22%20fill%3D%22white%22%20opacity%3D%220.4923217962618217%22%20/%3E%3Ccircle%20cx%3D%221539%22%20cy%3D%221214%22%20r%3D%221.9203508402733198%22%20fill%3D%22white%22%20opacity%3D%220.45644584248508246%22%20/%3E%3Ccircle%20cx%3D%22107%22%20cy%3D%22278%22%20r%3D%220.9607677277461653%22%20fill%3D%22white%22%20opacity%3D%220.12378877398056468%22%20/%3E%3Ccircle%20cx%3D%22181%22%20cy%3D%221149%22%20r%3D%221.6378523321285856%22%20fill%3D%22white%22%20opacity%3D%220.2891357686147572%22%20/%3E%3Ccircle%20cx%3D%22619%22%20cy%3D%221857%22%20r%3D%221.8566310760787936%22%20fill%3D%22white%22%20opacity%3D%220.40562219811624567%22%20/%3E%3Ccircle%20cx%3D%221605%22%20cy%3D%221982%22%20r%3D%220.832267099792084%22%20fill%3D%22white%22%20opacity%3D%220.321422011415067%22%20/%3E%3Ccircle%20cx%3D%221785%22%20cy%3D%221942%22%20r%3D%220.5780795918102577%22%20fill%3D%22white%22%20opacity%3D%220.47443564105671%22%20/%3E%3Ccircle%20cx%3D%221017%22%20cy%3D%221294%22%20r%3D%220.8515364695453367%22%20fill%3D%22white%22%20opacity%3D%220.2647443708045645%22%20/%3E%3Ccircle%20cx%3D%22632%22%20cy%3D%22402%22%20r%3D%221.0180387810276064%22%20fill%3D%22white%22%20opacity%3D%220.4807473382531362%22%20/%3E%3Ccircle%20cx%3D%221492%22%20cy%3D%2256%22%20r%3D%220.6747442988968118%22%20fill%3D%22white%22%20opacity%3D%220.46425486472195954%22%20/%3E%3Ccircle%20cx%3D%22331%22%20cy%3D%22754%22%20r%3D%221.2175939305651657%22%20fill%3D%22white%22%20opacity%3D%220.28770090791101344%22%20/%3E%3Ccircle%20cx%3D%221907%22%20cy%3D%22555%22%20r%3D%220.8999501827133769%22%20fill%3D%22white%22%20opacity%3D%220.4130218454977407%22%20/%3E%3Ccircle%20cx%3D%221260%22%20cy%3D%221212%22%20r%3D%221.4573745214640925%22%20fill%3D%22white%22%20opacity%3D%220.10177784402397193%22%20/%3E%3Ccircle%20cx%3D%221778%22%20cy%3D%22502%22%20r%3D%220.9460706872034652%22%20fill%3D%22white%22%20opacity%3D%220.18740169900624198%22%20/%3E%3Ccircle%20cx%3D%22685%22%20cy%3D%22988%22%20r%3D%220.6543708630106454%22%20fill%3D%22white%22%20opacity%3D%220.38693848288235255%22%20/%3E%3Ccircle%20cx%3D%221985%22%20cy%3D%22959%22%20r%3D%221.0615000958982717%22%20fill%3D%22white%22%20opacity%3D%220.2761335500084241%22%20/%3E%3C/svg%3E"), 
+    radial-gradient(ellipse 120% 60% at 50% 0%, #1e1a3a 0%, #0b0a14 55%, #060610 100%);
+  background-size: 800px 800px, 100% 100%;
+  animation: starfieldTwinkle 5s ease-in-out infinite alternate;
+}
+
+@keyframes starfieldTwinkle {
+  0% { background-position: 0 0, 0 0; opacity: 0.9; }
+  100% { background-position: -5px -5px, 0 0; opacity: 1; }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* ─── Scrollbar ───────────────────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(240, 185, 91, 0.15);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(240, 185, 91, 0.3);
+}
+
+/* ─── Markdown Content ────────────────────────────────────────────────────── */
+
+.markdown-content p {
+  margin-bottom: 0.75em;
+}
+
+.markdown-content p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+.markdown-content li {
+  margin-bottom: 0.25em;
+}
+
+.markdown-content strong {
+  color: #f0b95b;
+  font-weight: 600;
+}
+
+.markdown-content em {
+  color: rgba(232, 227, 216, 0.8);
+  font-style: italic;
+}
+
+.markdown-content code {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.markdown-content blockquote {
+  border-left: 2px solid rgba(240, 185, 91, 0.3);
+  padding-left: 1em;
+  margin: 0.75em 0;
+  color: rgba(232, 227, 216, 0.7);
+  font-style: italic;
+}
+
+/* ─── Glassmorphism surface ───────────────────────────────────────────────── */
+
+.glass-surface {
+  /* background: rgba(255, 255, 255, 0.03); */
+  /* backdrop-filter: blur(12px); */
+  border: 1px solid rgba(240, 185, 91, 0.1);
+}
+
+/* ─── Glow effect ─────────────────────────────────────────────────────────── */
+
+.glow-accent {
+  box-shadow: 0 0 20px rgba(240, 185, 91, 0.08),
+              0 0 60px rgba(240, 185, 91, 0.04);
+}
+
+/* ─── Tool activity connector line ────────────────────────────────────────── */
+
+.tool-connector {
+  position: relative;
+}
+
+.tool-connector::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 24px;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, rgba(240, 185, 91, 0.3), transparent);
+}
+
+.tool-connector:last-child::before {
+  display: none;
+}
+
+/* ─── Input focus ring ────────────────────────────────────────────────────── */
+
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(240, 185, 91, 0.3);
+}
+
+/* ─── Typing indicator ────────────────────────────────────────────────────── */
+
+.typing-dot {
+  animation: typingBounce 1.4s ease-in-out infinite;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typingBounce {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+  30% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
+/* ─── Streaming Cursor ────────────────────────────────────────────────────── */
+
+.message-streaming .markdown-content > *:last-child::after,
+.message-streaming .markdown-content > p:last-child::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 14px;
+  background-color: #f0b95b;
+  margin-left: 4px;
+  vertical-align: middle;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
