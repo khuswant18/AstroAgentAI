@@ -56,3 +56,5 @@ chroma_db/
 
 # Render/Deploy
 .render/
+backend/eval/results/*.csv
+*.flag
